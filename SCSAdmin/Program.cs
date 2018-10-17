@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StandardCostSystem
+namespace SCSAdmin
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace StandardCostSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CatalogoGeneral());
+            Application.Run(new Form1());
         }
     }
 }

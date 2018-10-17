@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{05195748-5524-4A5E-902D-C67CC887C9A5}</ProjectGuid>
+    <ProjectGuid>{878E512E-A5EF-4919-8AD5-3424C18D8829}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>StandardCostSystem</RootNamespace>
-    <AssemblyName>StandardCostSystem</AssemblyName>
+    <RootNamespace>SCSAdmin</RootNamespace>
+    <AssemblyName>SCSAdmin</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

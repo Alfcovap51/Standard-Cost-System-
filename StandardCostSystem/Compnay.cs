@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace StandardCostSystem
 {
-    public partial class Form1 : Form
+    public partial class Compnay : Form
     {
-        public Form1()
+        public Compnay()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void areasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

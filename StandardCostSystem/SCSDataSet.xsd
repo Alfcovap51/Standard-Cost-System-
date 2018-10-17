@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SCSDataSet" targetNamespace="http://tempuri.org/SCSDataSet.xsd" xmlns:mstns="http://tempuri.org/SCSDataSet.xsd" xmlns="http://tempuri.org/SCSDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SCSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SCSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StandardCostSystem.Properties.Settings.GlobalReference.Default.SCSConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="areasTableAdapter" GeneratorDataComponentClassName="areasTableAdapter" Name="areas" UserDataComponentName="areasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SCSConnectionString (Settings)" DbObjectName="scs.areas" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Area, ID_Company, Name_Area FROM areas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="companiesTableAdapter" GeneratorDataComponentClassName="companiesTableAdapter" Name="companies" UserDataComponentName="companiesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SCSConnectionString (Settings)" DbObjectName="scs.companies" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Company, Name_Company FROM companies</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="expensesTableAdapter" GeneratorDataComponentClassName="expensesTableAdapter" Name="expenses" UserDataComponentName="expensesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SCSConnectionString (Settings)" DbObjectName="scs.expenses" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Company, ID_Area, ID_SubArea, ID_Expenses, Description, Budget FROM expenses</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="registersTableAdapter" GeneratorDataComponentClassName="registersTableAdapter" Name="registers" UserDataComponentName="registersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SCSConnectionString (Settings)" DbObjectName="scs.registers" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Register, AccountNumber, Name_Register, Cost FROM registers</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="subareaTableAdapter" GeneratorDataComponentClassName="subareaTableAdapter" Name="subarea" UserDataComponentName="subareaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SCSConnectionString (Settings)" DbObjectName="scs.subarea" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_SubArea, ID_Area, ID_Company, Name_SubArea FROM subarea</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SCSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SCSDataSet" msprop:Generator_UserDSName="SCSDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="areas" msprop:Generator_TableClassName="areasDataTable" msprop:Generator_TableVarName="tableareas" msprop:Generator_TablePropName="areas" msprop:Generator_RowDeletingName="areasRowDeleting" msprop:Generator_RowChangingName="areasRowChanging" msprop:Generator_RowEvHandlerName="areasRowChangeEventHandler" msprop:Generator_RowDeletedName="areasRowDeleted" msprop:Generator_UserTableName="areas" msprop:Generator_RowChangedName="areasRowChanged" msprop:Generator_RowEvArgName="areasRowChangeEvent" msprop:Generator_RowClassName="areasRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="companies" msprop:Generator_TableClassName="companiesDataTable" msprop:Generator_TableVarName="tablecompanies" msprop:Generator_TablePropName="companies" msprop:Generator_RowDeletingName="companiesRowDeleting" msprop:Generator_RowChangingName="companiesRowChanging" msprop:Generator_RowEvHandlerName="companiesRowChangeEventHandler" msprop:Generator_RowDeletedName="companiesRowDeleted" msprop:Generator_UserTableName="companies" msprop:Generator_RowChangedName="companiesRowChanged" msprop:Generator_RowEvArgName="companiesRowChangeEvent" msprop:Generator_RowClassName="companiesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="expenses" msprop:Generator_TableClassName="expensesDataTable" msprop:Generator_TableVarName="tableexpenses" msprop:Generator_TablePropName="expenses" msprop:Generator_RowDeletingName="expensesRowDeleting" msprop:Generator_RowChangingName="expensesRowChanging" msprop:Generator_RowEvHandlerName="expensesRowChangeEventHandler" msprop:Generator_RowDeletedName="expensesRowDeleted" msprop:Generator_UserTableName="expenses" msprop:Generator_RowChangedName="expensesRowChanged" msprop:Generator_RowEvArgName="expensesRowChangeEvent" msprop:Generator_RowClassName="expensesRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="registers" msprop:Generator_TableClassName="registersDataTable" msprop:Generator_TableVarName="tableregisters" msprop:Generator_TablePropName="registers" msprop:Generator_RowDeletingName="registersRowDeleting" msprop:Generator_RowChangingName="registersRowChanging" msprop:Generator_RowEvHandlerName="registersRowChangeEventHandler" msprop:Generator_RowDeletedName="registersRowDeleted" msprop:Generator_UserTableName="registers" msprop:Generator_RowChangedName="registersRowChanged" msprop:Generator_RowEvArgName="registersRowChangeEvent" msprop:Generator_RowClassName="registersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="subarea" msprop:Generator_TableClassName="subareaDataTable" msprop:Generator_TableVarName="tablesubarea" msprop:Generator_TablePropName="subarea" msprop:Generator_RowDeletingName="subareaRowDeleting" msprop:Generator_RowChangingName="subareaRowChanging" msprop:Generator_RowEvHandlerName="subareaRowChangeEventHandler" msprop:Generator_RowDeletedName="subareaRowDeleted" msprop:Generator_UserTableName="subarea" msprop:Generator_RowChangedName="subareaRowChanged" msprop:Generator_RowEvArgName="subareaRowChangeEvent" msprop:Generator_RowClassName="subareaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
