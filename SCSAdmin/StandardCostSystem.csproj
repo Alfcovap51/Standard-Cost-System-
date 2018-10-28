@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,16 +47,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="General.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClass.cs" />
+    <Compile Include="newArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newArea.Designer.cs">
+      <DependentUpon>newArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newProcess.Designer.cs">
+      <DependentUpon>newProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newSubArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newSubArea.Designer.cs">
+      <DependentUpon>newSubArea.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="RegisterIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterIndex.Designer.cs">
+      <DependentUpon>RegisterIndex.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="General.resx">
+      <DependentUpon>General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newArea.resx">
+      <DependentUpon>newArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newProcess.resx">
+      <DependentUpon>newProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newSubArea.resx">
+      <DependentUpon>newSubArea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +101,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegisterIndex.resx">
+      <DependentUpon>RegisterIndex.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
