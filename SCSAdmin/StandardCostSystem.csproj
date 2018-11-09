@@ -60,11 +60,11 @@
     <Compile Include="newArea.Designer.cs">
       <DependentUpon>newArea.cs</DependentUpon>
     </Compile>
-    <Compile Include="newProcess.cs">
+    <Compile Include="newConcept.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="newProcess.Designer.cs">
-      <DependentUpon>newProcess.cs</DependentUpon>
+    <Compile Include="newConcept.Designer.cs">
+      <DependentUpon>newConcept.cs</DependentUpon>
     </Compile>
     <Compile Include="newSubArea.cs">
       <SubType>Form</SubType>
@@ -80,14 +80,20 @@
     <Compile Include="RegisterIndex.Designer.cs">
       <DependentUpon>RegisterIndex.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registers.Designer.cs">
+      <DependentUpon>Registers.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="General.resx">
       <DependentUpon>General.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newArea.resx">
       <DependentUpon>newArea.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newProcess.resx">
-      <DependentUpon>newProcess.cs</DependentUpon>
+    <EmbeddedResource Include="newConcept.resx">
+      <DependentUpon>newConcept.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="newSubArea.resx">
       <DependentUpon>newSubArea.cs</DependentUpon>
@@ -103,6 +109,9 @@
     </Compile>
     <EmbeddedResource Include="RegisterIndex.resx">
       <DependentUpon>RegisterIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registers.resx">
+      <DependentUpon>Registers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

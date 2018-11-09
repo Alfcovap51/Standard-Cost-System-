@@ -84,7 +84,7 @@
             // 
             this.procesoToolStripMenuItem.Name = "procesoToolStripMenuItem";
             this.procesoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.procesoToolStripMenuItem.Text = "Gasto";
+            this.procesoToolStripMenuItem.Text = "Concepto";
             this.procesoToolStripMenuItem.Click += new System.EventHandler(this.procesoToolStripMenuItem_Click);
             // 
             // registroToolStripMenuItem

@@ -135,7 +135,7 @@ namespace SCSAdmin
 
         private void procesoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            newExpense Expense = new newExpense();
+            newConcept Expense = new newConcept();
             Expense.Show();
         }
     }
