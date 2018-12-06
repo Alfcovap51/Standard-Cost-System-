@@ -56,7 +56,6 @@ namespace SCSAdmin
 
         public DataTable getData(string query)
         {
-
             cmd = new MySqlCommand(query, dbcon);
             adapter = new MySqlDataAdapter(cmd);
             table = new DataTable();
@@ -68,12 +67,11 @@ namespace SCSAdmin
         private void loadConceptsList()
         {
             int idCompany = getCompany();
-            string query = "SELECT ID_Concept , CONCAT(ID_Concept,Description) AS Concept FROM scs.concepts WHERE ID_Company = " + getCompany();
-
+            string query = "SELECT Number_Concept , CONCAT(Number_Concept,'   ',Description) AS Concept FROM scs.concepts WHERE ID_Company = " + getCompany();
 
             lstConcepts.DataSource = getData(query);
-            lstConcepts.DisplayMember = "Description";
-            lstConcepts.ValueMember = "ID_Concept";
+            lstConcepts.DisplayMember = "Concept";
+            lstConcepts.ValueMember = "Number_Concept";
             dbcon.Close();
         }
 
@@ -100,10 +98,10 @@ namespace SCSAdmin
             {
                 try
                 {
-                    String query = "INSERT INTO scs.concepts(ID_Expense,Description) values(@ID_Concept, @Description)";
+                    String query = "INSERT INTO scs.concepts(Number_Concept,Description) values(@Number_Concept, @Description)";
                     //Create Command
                     MySqlCommand cmd = new MySqlCommand(query, dbcon);
-                    cmd.Parameters.AddWithValue("ID_Concept", idConcept);
+                    cmd.Parameters.AddWithValue("Number_Concept", idConcept);
                     cmd.Parameters.AddWithValue("Description", newConceptDescription);
                     
                     MySqlDataReader MyReader2;
@@ -111,8 +109,7 @@ namespace SCSAdmin
                     MessageBox.Show("Concepto Agregado");
                     MyReader2.Close();
                     dbcon.Close();
-                    loadConceptsList();
-                    
+                    loadConceptsList();     
 
                 }
                 catch (Exception err)
@@ -146,17 +143,17 @@ namespace SCSAdmin
                 {
                     try
                     {
-                        String query = "DELETE FROM scs.expenses WHERE Number_Expense = @Number_Expense";
+                        String query = "DELETE FROM scs.expenses WHERE Number_Concept = @Number_Concept";
                         //Create Command
                         MySqlCommand cmd = new MySqlCommand(query, dbcon);
 
-                        cmd.Parameters.AddWithValue("Number_Expense", Number_Expense);
+                        cmd.Parameters.AddWithValue("Number_Concept", lstConcepts.SelectedValue);
                         MySqlDataReader MyReader2;
-                        MyReader2 = cmd.ExecuteReader();     // Here our query will be executed and data saved into the database.  
-                        MessageBox.Show("Gasto Eliminado");
+                        MyReader2 = cmd.ExecuteReader();   // Here our query will be executed and data saved into the database.  
+                        MessageBox.Show("Concepto Eliminado");
 
                         dbcon.Close();
-                        loadExpensesList();
+                        loadConceptsList();
 
                     }
                     catch (Exception err)
@@ -169,6 +166,11 @@ namespace SCSAdmin
 
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

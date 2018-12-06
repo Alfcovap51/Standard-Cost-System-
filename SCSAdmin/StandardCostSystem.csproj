@@ -86,6 +86,12 @@
     <Compile Include="Registers.Designer.cs">
       <DependentUpon>Registers.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResponsabilityCenterAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResponsabilityCenterAssignment.Designer.cs">
+      <DependentUpon>ResponsabilityCenterAssignment.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="General.resx">
       <DependentUpon>General.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registers.resx">
       <DependentUpon>Registers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResponsabilityCenterAssignment.resx">
+      <DependentUpon>ResponsabilityCenterAssignment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

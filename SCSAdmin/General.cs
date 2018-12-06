@@ -138,5 +138,11 @@ namespace SCSAdmin
             newConcept Expense = new newConcept();
             Expense.Show();
         }
+
+        private void registroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegisterIndex Register = new RegisterIndex();
+            Register.Show();
+        }
     }
 }

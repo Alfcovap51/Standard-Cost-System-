@@ -69,21 +69,21 @@
             // areaToolStripMenuItem
             // 
             this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
-            this.areaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.areaToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.areaToolStripMenuItem.Text = "Area";
             this.areaToolStripMenuItem.Click += new System.EventHandler(this.areaToolStripMenuItem_Click);
             // 
             // subAreaToolStripMenuItem
             // 
             this.subAreaToolStripMenuItem.Name = "subAreaToolStripMenuItem";
-            this.subAreaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.subAreaToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.subAreaToolStripMenuItem.Text = "SubArea";
             this.subAreaToolStripMenuItem.Click += new System.EventHandler(this.subAreaToolStripMenuItem_Click);
             // 
             // procesoToolStripMenuItem
             // 
             this.procesoToolStripMenuItem.Name = "procesoToolStripMenuItem";
-            this.procesoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.procesoToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.procesoToolStripMenuItem.Text = "Concepto";
             this.procesoToolStripMenuItem.Click += new System.EventHandler(this.procesoToolStripMenuItem_Click);
             // 
@@ -92,6 +92,7 @@
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
             this.registroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registroToolStripMenuItem.Text = "Registro";
+            this.registroToolStripMenuItem.Click += new System.EventHandler(this.registroToolStripMenuItem_Click);
             // 
             // lblCompany
             // 
